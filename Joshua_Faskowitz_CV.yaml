@@ -421,6 +421,14 @@ cv:
           - "Richard F Betzel"
         journal: "Nature communications 15(1) 5865"
         date: 2024
+      - title: "Reliability of variability and complexity measures for task and task-free BOLD fMRI."
+        authors:
+          - "MH Wehrheim"
+          - "**J Faskowitz**"
+          - "AL Schubert"
+          - "CJ Fiebach"
+        journal: "Human Brain Mapping 45(10) e26778-e26778"
+        date: 2024
       - title: "Neuroanatomical changes observed over the course of a human pregnancy"
         authors:
           - "Laura Pritschet"
@@ -1321,29 +1329,7 @@ cv:
         journal: "2015 IEEE 12th International Symposium on Biomedical Imaging (ISBI)"
         date: 2015
     Other Publications:
-      - title: "Reliability of variability and complexity measures for task and task-free BOLD fMRI"
-        authors:
-          - "Maren H Wehrheim"
-          - "**Joshua Faskowitz**"
-          - "Anna-Lena Schubert"
-          - "Christian J Fiebach"
-        summary: "Wiley Online Library"
-        date: 2024
-      - title: "The ENIGMA Cancer and Chemotherapy Working Group and Cancer-Related Cognitive Impairment (P6. 171)"
-        authors:
-          - "Mark Shiroishi"
-          - "Vikash Gupta"
-          - "**Joshua Faskowitz**"
-          - "Bavrina Bigjahan"
-          - "Steven Cen"
-          - "Faisal Rashid"
-          - "Darryl Hwang"
-          - "Alexander Lerner"
-          - "Orest Boyko"
-          - "Chia-Shang Jason Liu"
-          - "et al."
-        summary: "Wolters Kluwer Health, Inc. on behalf of the American Academy of Neurology"
-        date: 2018
+      - "No entries yet"
     Conference Posters (first-author only):
       - title: "Spatial Similarity Maps Across the Cortex"
         authors:
