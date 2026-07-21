@@ -31,13 +31,13 @@ cv:
     Research Experience:
       - company: "National Institute of Mental Health"
         position: "Postdoctoral Fellow, Section on Functional Imaging Methods"
-        start_date: "2023"
+        start_date: "2022"
         end_date: present
         location: "Bethesda, MD"
         summary: "PI: Dr. Peter A. Bandettini"
         highlights:
           - "Develop and apply methods for characterizing fMRI correlation structure across space and time"
-          - "Study how preprocessing, physiology, and signal interpretation shape inferences about functional brain organization"
+          - "Study how preprocessing, physiology, and signal interpretation shape inferences about brain organization"
       - company: "Indiana University Department of Psychological and Brain Sciences"
         position: "Postdoctoral Researcher"
         start_date: "2021"
@@ -55,7 +55,6 @@ cv:
         summary: "PI: Dr. Olaf Sporns"
         highlights:
           - "Investigated mesoscale organization, edge-centric representations, and time-varying structure in structural and functional brain networks"
-          - "Collaborated across labs on methods, data sharing, and reproducible computational analyses in network neuroscience"
       - company: "USC Imaging Genetics Center"
         position: "Project Assistant"
         start_date: "2014"
@@ -82,19 +81,19 @@ cv:
         summary: "Departmental outstanding recent PhD graduate ($2,000)"
       - name: "IU Gill Center Linda and Jack Gill Graduate Student Award Honorable Mention"
         date: "2021"
-        summary: "One of four awardees; selected from regional neuroscience programs at IUB, IUPUI, Purdue, and Notre Dame"
+        summary: "One of four awardees selected from regional neuroscience programs at IUB, IUPUI, Purdue, and Notre Dame"
       - name: "IU Department of Psychological and Brain Sciences J. R. Kantor Graduate Award"
         date: "2021"
         summary: "Departmental outstanding advanced graduate student; shared with another student ($1,750)"
       - name: "IU College of Arts and Sciences Dissertation Research Fellowship"
         date: "2020-2021"
         summary: "$20,000"
-      - name: "ACNN Travel Award"
-        date: "2016, 2019"
-        summary: "Travel to the Advanced Computational Neuroscience Network Workshop (~$300)"
-      - name: "PNS Travel Award"
-        date: "2019"
-        summary: "Travel to the Network Neuroscience satellite at NetSci 2019 ($800)"
+      # - name: "ACNN Travel Award"
+      #   date: "2016, 2019"
+      #   summary: "Travel to the Advanced Computational Neuroscience Network Workshop (~$300)"
+      # - name: "PNS Travel Award"
+      #   date: "2019"
+      #   summary: "Travel to the Network Neuroscience satellite at NetSci 2019 ($800)"
       - name: "NSF Graduate Research Fellowship Program"
         date: "2016-2019"
         summary: "$34,000 per year for 3 years"
@@ -113,33 +112,33 @@ cv:
 
     Invited Talks:
       - name: "Spatial Similarity Maps Across the Cortex"
-        date: "2026 Su"
+        date: "2026"
         summary: "OHBM 2026 oral session"
       - name: "Network Outcomes, Uses, and Null Models"
-        date: "2022 Sp"
+        date: "2022"
         summary: "Practical Applications of Network Neuroscience Workshop, co-organized with Dr. Jenya Chumin"
       - name: "Brain Networks: Close to the Edge"
-        date: "2022 Sp"
+        date: "2022"
         summary: "Washington University in St. Louis Neuroimaging in Health and Disease seminar series"
       - name: "Brain Networks: Close to the Edge"
-        date: "2022 Sp"
+        date: "2022"
         summary: "Dr. Lucina Uddin lab meeting"
       - name: "fMRI Preprocessing Workshop"
-        date: "2022 Su"
+        date: "2022"
         summary: "Three-day workshop covering workflows for processing functional neuroimaging data on Indiana University high-performance computing resources"
       - name: "Publicly Available Neuroimaging Databases"
-        date: "2020 Sp"
+        date: "2020"
         summary: "CUNY 2020 workshop on remote data collection"
 
     Teaching:
       - name: "The Consciousness Network"
-        date: "2023, 2024, 2026 Su"
+        date: "2023, 2024, 2026"
         summary: "NIH summer journal club, co-organized with Dr. Sharif Kronemer"
       - name: "P303: Health Psychology"
-        date: "2019 Sp"
+        date: "2019"
         summary: "Teaching assistant"
       - name: "P211: Methods of Experimental Psychology"
-        date: "2018 Fa"
+        date: "2018"
         summary: "Instructor of record"
 
     Workshops and Hackathons Attended:
@@ -150,22 +149,19 @@ cv:
         date: "2019-05"
         summary: "Pre-NetSci 2019, University of Vermont"
       - name: "Brainhack Global at IU"
-        date: "2018 Sp"
+        date: "2018"
         summary: "Indiana University"
-      - name: "5th Indiana Neuroimaging Symposium and Hackathon"
-        date: "2017 Fa"
+      - name: "Indiana Neuroimaging Symposium and Hackathon"
+        date: "2016, 2017"
         summary: "Purdue University"
       - name: "Neurohackweek"
-        date: "2017 Fa"
+        date: "2017"
         summary: "University of Washington eScience Institute"
-      - name: "4th Indiana Neuroimaging Symposium and Hackathon"
-        date: "2016 Fa"
-        summary: "Indiana University"
       - name: "OHBM Hackathon"
-        date: "2015-06"
+        date: "2015"
         summary: "Pre-OHBM 2015, Honolulu, U.S.A."
 
-    Code and Data Sharing:
+    Code and Data Sharing Examples:
       - name: "Multi Atlas Transfer Tools"
         summary: "Fit surface parcellations; run more than 20,000 times as an app on Brainlife.io"
       - name: "fMRI-2-MatTools"
@@ -187,7 +183,7 @@ cv:
       - "Aperture Neuro; Brain Imaging and Behavior; Brain Structure and Function; Biological Psychiatry; Cerebral Cortex; Communications Biology; Human Brain Mapping; Nature Communications; Network Science; Network Neuroscience; NeuroImage; Scientific Data; Scientific Reports; The Journal of Neuroscience; Trends in Cognitive Sciences"
 
     Professional Affiliations:
-      - "Network Science Society; Organization for Human Brain Mapping; Society for Neuroscience"
+      - "Organization for Human Brain Mapping; Society for Neuroscience; Network Science Society;"
 
     # BEGIN GENERATED BIBLIOGRAPHY
     # Generated by scripts/bib_to_rendercv.py. Edit the .bib files, then rerun the script.
@@ -198,7 +194,6 @@ cv:
           - "Martin Weiß"
           - "**Joshua Faskowitz**"
           - "Kirsten Hilger"
-        summary: "Identifier: 2026-01"
         journal: "bioRxiv"
         date: 2026
       - title: "Human cortex organizes dynamic co-fluctuations along sensation-association axis"
@@ -221,7 +216,6 @@ cv:
           - "Peter A Bandettini"
           - "Bharat Biswal"
           - "Paul A Taylor"
-        summary: "Identifier: 2025-09"
         journal: "bioRxiv"
         date: 2025
       - title: "Connectome architecture favours within-module diffusion and between-module routing"
@@ -231,7 +225,6 @@ cv:
           - "**Joshua Faskowitz**"
           - "Richard F Betzel"
           - "Olaf Sporns"
-        summary: "Identifier: 2025-02"
         journal: "bioRxiv"
         date: 2025
       - title: "Commentary on Pang et al.(2023) nature"
@@ -243,7 +236,6 @@ cv:
           - "Peter Bandettini"
           - "Saad Jbabdi"
           - "Richard Betzel"
-        summary: "Identifier: 2023-07"
         journal: "bioRxiv"
         date: 2023
       - title: "Stability of brain-behavior correlation patterns across measures of social support"
@@ -252,7 +244,6 @@ cv:
           - "**Joshua Faskowitz**"
           - "Marlen Z Gonzalez"
           - "Richard F Betzel"
-        summary: "Identifier: 2023-03"
         journal: "bioRxiv"
         date: 2023
       - title: "System-level high-amplitude co-fluctuations"
@@ -262,7 +253,6 @@ cv:
           - "Farnaz Zamani Esfahlani"
           - "Jacob Tanner"
           - "**Joshua Faskowitz**"
-        summary: "Identifier: 2022-07"
         journal: "bioRxiv"
         date: 2022
       - title: "Multi-policy models of interregional communication in the human connectome"
@@ -1328,8 +1318,6 @@ cv:
         summary: "IEEE; pp. 449-453"
         journal: "2015 IEEE 12th International Symposium on Biomedical Imaging (ISBI)"
         date: 2015
-    Other Publications:
-      - "No entries yet"
     Conference Posters (first-author only):
       - title: "Spatial Similarity Maps Across the Cortex"
         authors:
@@ -1519,10 +1507,45 @@ cv:
     # END GENERATED BIBLIOGRAPHY
 
 design:
-  theme: "classic"
+  theme: "sb2nov"
+
+  templates:
+    footer: "*NAME -- PAGE_NUMBER/TOTAL_PAGES*"
+    top_note: "*LAST_UPDATED CURRENT_DATE*"
+    single_date: YEAR
+    date_range: START_DATE – END_DATE
+    time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
+  entries:
+    date_and_location_width: 4.15cm
+    side_space: 0.2cm
+    space_between_columns: 0.1cm
+    allow_page_break: false
+    short_second_row: false
+    degree_width: 1cm
+    summary:
+      space_above: 0cm
+      space_left: 0.5em
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.5em
+    space_between_text_based_entries: 0.2em
+    show_time_spans_in: 
+      - experience
 
 locale:
   language: "english"
 
 settings:
   current_date: "2026-06-25"
+  render_command:
+    output_folder: rendercv_output
+    typst_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.typ
+    pdf_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.pdf
+    markdown_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.md
+    html_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.html
+    png_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.png
+    dont_generate_markdown: false
+    dont_generate_html: false
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: true

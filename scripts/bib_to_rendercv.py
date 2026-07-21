@@ -289,8 +289,6 @@ def classify_publication(entry: BibEntry) -> str | None:
         return "Preprints"
     if entry.entry_type == "article":
         return "Journal Articles"
-    if entry.entry_type in {"misc", "techreport"}:
-        return "Other Publications"
     return None
 
 
@@ -381,18 +379,6 @@ def build_summary(entry: BibEntry, section_name: str) -> str | None:
             details.append(f"pp. {pages}")
         if details:
             parts.append(", ".join(details))
-    elif section_name == "Preprints":
-        pages = clean_pages(entry.fields.get("pages"))
-        if pages:
-            parts.append(f"Identifier: {pages}")
-    elif section_name == "Other Publications":
-        publisher = entry.fields.get("publisher")
-        institution = entry.fields.get("institution")
-        note = entry.fields.get("note")
-        for item in (publisher, institution, note):
-            if item:
-                parts.append(item)
-
     return "; ".join(parts) if parts else None
 
 
@@ -499,7 +485,6 @@ def render_generated_block(
         "Preprints": [],
         "Journal Articles": [],
         "Peer-Reviewed Conference Proceedings": [],
-        "Other Publications": [],
         "Conference Posters (first-author only)": [],
     }
 
@@ -521,7 +506,6 @@ def render_generated_block(
         "Preprints",
         "Journal Articles",
         "Peer-Reviewed Conference Proceedings",
-        "Other Publications",
         "Conference Posters (first-author only)",
     ):
         lines.extend(render_section(section_name, section_map[section_name]))
