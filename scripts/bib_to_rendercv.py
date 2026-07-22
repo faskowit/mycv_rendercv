@@ -9,9 +9,16 @@ import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 
+REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 BEGIN_MARKER = "    # BEGIN GENERATED BIBLIOGRAPHY"
 END_MARKER = "    # END GENERATED BIBLIOGRAPHY"
-OWNER_LAST_NAME = "faskowitz"
+
+# Defaults for this CV. Forks can override the owner name from the command line;
+# adjust the classification constants below only when their publication taxonomy
+# differs from the four RenderCV sections produced by this script.
+DEFAULT_OWNER_LAST_NAME = "faskowitz"
+PREPRINT_JOURNALS = {"biorxiv", "bioarxiv", "arxiv"}
+POSTER_INCLUDE_KEYWORD = "firstauth"
 
 
 @dataclass
@@ -285,7 +292,7 @@ def classify_publication(entry: BibEntry) -> str | None:
     journal = entry.fields.get("journal", "").strip().lower()
     if entry.entry_type == "inproceedings":
         return "Peer-Reviewed Conference Proceedings"
-    if journal in {"biorxiv", "bioarxiv", "arxiv"}:
+    if journal in PREPRINT_JOURNALS:
         return "Preprints"
     if entry.entry_type == "article":
         return "Journal Articles"
@@ -297,7 +304,7 @@ def has_keyword(entry: BibEntry, keyword: str) -> bool:
     return keyword.lower() in {part.strip().lower() for part in keywords.split(",") if part.strip()}
 
 
-def split_authors(author_text: str) -> list[str]:
+def split_authors(author_text: str, owner_last_name: str) -> list[str]:
     authors = [normalize_whitespace(part) for part in re.split(r"\s+and\s+", author_text) if part.strip()]
     formatted: list[str] = []
     for author in authors:
@@ -312,7 +319,7 @@ def split_authors(author_text: str) -> list[str]:
                 last, suffix, first = parts[0], parts[1], parts[2]
                 author = f"{first} {suffix} {last}".strip()
         author = normalize_whitespace(author)
-        if OWNER_LAST_NAME in author.casefold():
+        if owner_last_name and owner_last_name.casefold() in author.casefold():
             author = f"**{author}**"
         formatted.append(author)
     return formatted
@@ -338,7 +345,20 @@ def clean_pages(pages: str | None) -> str | None:
 
 def build_journal(entry: BibEntry, section_name: str) -> str | None:
     if section_name == "Peer-Reviewed Conference Proceedings":
-        return entry.fields.get("booktitle")
+        parts = [entry.fields.get("booktitle")]
+        organization = entry.fields.get("organization") or entry.fields.get("publisher")
+        if organization:
+            parts.append(organization)
+        details = []
+        volume = entry.fields.get("volume")
+        pages = clean_pages(entry.fields.get("pages"))
+        if volume:
+            details.append(f"Vol. {volume}")
+        if pages:
+            details.append(f"pp. {pages}")
+        if details:
+            parts.append(", ".join(details))
+        return "; ".join(part for part in parts if part)
     if section_name == "Conference Posters (first-author only)":
         return entry.fields.get("note") or entry.fields.get("booktitle")
 
@@ -362,24 +382,9 @@ def build_journal(entry: BibEntry, section_name: str) -> str | None:
 
 
 def build_summary(entry: BibEntry, section_name: str) -> str | None:
-    if section_name == "Conference Posters (first-author only)":
-        return None
-
-    parts: list[str] = []
-    if section_name == "Peer-Reviewed Conference Proceedings":
-        organization = entry.fields.get("organization") or entry.fields.get("publisher")
-        if organization:
-            parts.append(organization)
-        volume = entry.fields.get("volume")
-        pages = clean_pages(entry.fields.get("pages"))
-        details = []
-        if volume:
-            details.append(f"Vol. {volume}")
-        if pages:
-            details.append(f"pp. {pages}")
-        if details:
-            parts.append(", ".join(details))
-    return "; ".join(parts) if parts else None
+    # Conference-proceedings metadata belongs on the journal line so it does
+    # not inherit the CV's visually indented summary style.
+    return None
 
 
 def build_url(entry: BibEntry) -> str | None:
@@ -392,10 +397,12 @@ def build_url(entry: BibEntry) -> str | None:
     return None
 
 
-def entry_to_rendercv(section_name: str, entry: BibEntry) -> dict[str, object]:
+def entry_to_rendercv(
+    section_name: str, entry: BibEntry, owner_last_name: str
+) -> dict[str, object]:
     data: dict[str, object] = {
         "title": entry.fields.get("title", entry.key),
-        "authors": split_authors(entry.fields.get("author", "")),
+        "authors": split_authors(entry.fields.get("author", ""), owner_last_name),
     }
 
     date = build_date(entry)
@@ -480,6 +487,7 @@ def render_section(section_name: str, entries: list[dict[str, object]]) -> list[
 def render_generated_block(
     publication_entries: list[BibEntry],
     poster_entries: list[BibEntry],
+    owner_last_name: str,
 ) -> str:
     section_map: dict[str, list[dict[str, object]]] = {
         "Preprints": [],
@@ -491,12 +499,16 @@ def render_generated_block(
     for entry in sort_entries(publication_entries):
         section_name = classify_publication(entry)
         if section_name:
-            section_map[section_name].append(entry_to_rendercv(section_name, entry))
+            section_map[section_name].append(
+                entry_to_rendercv(section_name, entry, owner_last_name)
+            )
 
     for entry in sort_entries(poster_entries):
-        if has_keyword(entry, "firstauth"):
+        if has_keyword(entry, POSTER_INCLUDE_KEYWORD):
             section_name = "Conference Posters (first-author only)"
-            section_map[section_name].append(entry_to_rendercv(section_name, entry))
+            section_map[section_name].append(
+                entry_to_rendercv(section_name, entry, owner_last_name)
+            )
 
     lines = [
         BEGIN_MARKER,
@@ -529,18 +541,26 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--yaml",
-        default="Joshua_Faskowitz_CV.yaml",
+        default=REPOSITORY_ROOT / "Joshua_Faskowitz_CV.yaml",
         help="RenderCV YAML file to update.",
     )
     parser.add_argument(
         "--publications-bib",
-        default="bibliography/pubs.bib",
+        default=REPOSITORY_ROOT / "bibliography/pubs.bib",
         help="BibTeX file containing journal articles, preprints, and proceedings.",
     )
     parser.add_argument(
         "--posters-bib",
-        default="bibliography/posters.bib",
+        default=REPOSITORY_ROOT / "bibliography/posters.bib",
         help="BibTeX file containing posters and talks.",
+    )
+    parser.add_argument(
+        "--owner-last-name",
+        default=DEFAULT_OWNER_LAST_NAME,
+        help=(
+            "Last name to bold in publication author lists "
+            f"(default: {DEFAULT_OWNER_LAST_NAME})."
+        ),
     )
     parser.add_argument(
         "--stdout",
@@ -560,7 +580,9 @@ def main() -> int:
     publication_entries = parse_bibtex(publications_bib_path.read_text())
     poster_entries = parse_bibtex(posters_bib_path.read_text())
 
-    generated_block = render_generated_block(publication_entries, poster_entries)
+    generated_block = render_generated_block(
+        publication_entries, poster_entries, args.owner_last_name
+    )
     updated_yaml = replace_generated_block(yaml_text, generated_block)
 
     if args.stdout:

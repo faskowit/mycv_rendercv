@@ -1004,8 +1004,7 @@ cv:
           - "Greig I de Zubicaray"
           - "Margaret J Wright"
           - "Paul M Thompson"
-        summary: "Academic Press; pp. 25-43"
-        journal: "Imaging Genetics"
+        journal: "Imaging Genetics; Academic Press; pp. 25-43"
         date: 2018
       - title: "Sulcal-based morphometry in Parkinson’s disease: a study of reliability and disease effects"
         authors:
@@ -1020,8 +1019,7 @@ cv:
           - "Jean-François Mangin"
           - "Paul M Thompson"
           - "et al."
-        summary: "International Society for Optics and Photonics; Vol. 10975, pp. 109750T"
-        journal: "14th International Symposium on Medical Information Processing and Analysis"
+        journal: "14th International Symposium on Medical Information Processing and Analysis; International Society for Optics and Photonics; Vol. 10975, pp. 109750T"
         date: 2018
       - title: "Voxelwise meta-analysis of brain structural associations with genome-wide polygenic risk for Alzheimer’s disease"
         authors:
@@ -1032,8 +1030,7 @@ cv:
           - "Asta Håberg"
           - "Paul M Thompson"
           - "Neda Jahanshad"
-        summary: "International Society for Optics and Photonics; Vol. 10975, pp. 109750L"
-        journal: "14th International Symposium on Medical Information Processing and Analysis"
+        journal: "14th International Symposium on Medical Information Processing and Analysis; International Society for Optics and Photonics; Vol. 10975, pp. 109750L"
         date: 2018
       - title: "Multisite metaanalysis of image-wide genome-wide associations with morphometry"
         authors:
@@ -1048,8 +1045,7 @@ cv:
           - "M Arfan Ikram"
           - "Marcel P Zwiers"
           - "et al."
-        summary: "Academic Press; pp. 1-23"
-        journal: "Imaging Genetics"
+        journal: "Imaging Genetics; Academic Press; pp. 1-23"
         date: 2018
       - title: "Simultaneous Matrix Diagonalization for Structural Brain Networks Classification"
         authors:
@@ -1059,8 +1055,7 @@ cv:
           - "**Joshua I Faskowitz**"
           - "Neda Jahanshad"
           - "Paul M Thompson"
-        summary: "Springer, Cham; pp. 1261-1270"
-        journal: "International Conference on Complex Networks and their Applications"
+        journal: "International Conference on Complex Networks and their Applications; Springer, Cham; pp. 1261-1270"
         date: 2017
       - title: "Classifying phenotypes based on the community structure of human brain networks"
         authors:
@@ -1072,8 +1067,7 @@ cv:
           - "Neda Jahanshad"
           - "Paul Thompson"
           - "Leonid Zhukov"
-        summary: "Springer, Cham; pp. 3-11"
-        journal: "Graphs in Biomedical Image Analysis, Computational Anatomy and Imaging Genetics"
+        journal: "Graphs in Biomedical Image Analysis, Computational Anatomy and Imaging Genetics; Springer, Cham; pp. 3-11"
         date: 2017
       - title: "Mapping age effects along fiber tracts in young adults"
         authors:
@@ -1088,8 +1082,7 @@ cv:
           - "Margaret J Wright"
           - "Neda Jahanshad"
           - "et al."
-        summary: "IEEE; pp. 101-104"
-        journal: "2017 IEEE 14th International Symposium on Biomedical Imaging (ISBI 2017)"
+        journal: "2017 IEEE 14th International Symposium on Biomedical Imaging (ISBI 2017); IEEE; pp. 101-104"
         date: 2017
       - title: "A comparison of network definitions for detecting sex differences in brain connectivity using Support Vector Machines"
         authors:
@@ -1103,8 +1096,7 @@ cv:
           - "Meredith N Braskie"
           - "Gautam Prasad"
           - "Paul M Thompson"
-        summary: "IEEE; pp. 961-965"
-        journal: "2017 IEEE 14th International Symposium on Biomedical Imaging (ISBI 2017)"
+        journal: "2017 IEEE 14th International Symposium on Biomedical Imaging (ISBI 2017); IEEE; pp. 961-965"
         date: 2017
       - title: "Evaluating 35 methods to generate structural connectomes using pairwise classification"
         authors:
@@ -1116,8 +1108,7 @@ cv:
           - "Julio Villalon"
           - "Neda Jahanshad"
           - "Paul Thompson"
-        summary: "Springer, Cham; pp. 515-522"
-        journal: "International Conference on medical Image Computing and Computer-Assisted Intervention"
+        journal: "International Conference on medical Image Computing and Computer-Assisted Intervention; Springer, Cham; pp. 515-522"
         date: 2017
       - title: "Structural connectome validation using pairwise classification"
         authors:
@@ -1128,8 +1119,7 @@ cv:
           - "Neda Jahanshad"
           - "Mikhail Belyaev"
           - "Paul Thompson"
-        summary: "IEEE; pp. 451-455"
-        journal: "2017 IEEE 14th International Symposium on Biomedical Imaging (ISBI 2017)"
+        journal: "2017 IEEE 14th International Symposium on Biomedical Imaging (ISBI 2017); IEEE; pp. 451-455"
         date: 2017
       - title: "Cortical connectome registration using spherical demons"
         authors:
@@ -1138,8 +1128,7 @@ cv:
           - "Daniel Moyer"
           - "**Joshua Faskowitz**"
           - "Paul M Thompson"
-        summary: "International Society for Optics and Photonics; Vol. 10160, pp. 101600M"
-        journal: "12th International Symposium on Medical Information Processing and Analysis"
+        journal: "12th International Symposium on Medical Information Processing and Analysis; International Society for Optics and Photonics; Vol. 10160, pp. 101600M"
         date: 2017
       - title: "The core genetic network underlying sulcal morphometry"
         authors:
@@ -1149,8 +1138,7 @@ cv:
           - "**Joshua I Faskowitz**"
           - "Paul M Thompson"
           - "Neda Jahanshad"
-        summary: "International Society for Optics and Photonics; Vol. 10160, pp. 101600C"
-        journal: "12th International Symposium on Medical Information Processing and Analysis"
+        journal: "12th International Symposium on Medical Information Processing and Analysis; International Society for Optics and Photonics; Vol. 10160, pp. 101600C"
         date: 2017
       - title: "Utilizing brain measures for large-scale classification of autism applying EPIC"
         authors:
@@ -1160,8 +1148,7 @@ cv:
           - "Neda Jahanshad"
           - "**Joshua Faskowitz**"
           - "Paul M Thompson"
-        summary: "International Society for Optics and Photonics; Vol. 10160, pp. 101600W"
-        journal: "12th International Symposium on Medical Information Processing and Analysis"
+        journal: "12th International Symposium on Medical Information Processing and Analysis; International Society for Optics and Photonics; Vol. 10160, pp. 101600W"
         date: 2017
       - title: "Topological Modules of Human Brain Networks Are Anatomically Embedded: Evidence from Modularity Analysis at Multiple Scales"
         authors:
@@ -1172,8 +1159,7 @@ cv:
           - "Dmitry Petrov"
           - "**Joshua Faskowitz**"
           - "Leonid E Zhukov"
-        summary: "Springer, Cham; pp. 299-308"
-        journal: "International Conference on Network Analysis"
+        journal: "International Conference on Network Analysis; Springer, Cham; pp. 299-308"
         date: 2016
       - title: "Using Geometry of the Set of Symmetric Positive Semidefinite Matrices to Classify Structural Brain Networks"
         authors:
@@ -1185,8 +1171,7 @@ cv:
           - "**Joshua Faskowitz**"
           - "Neda Jahanshad"
           - "Paul Thompson"
-        summary: "Springer, Cham; pp. 257-267"
-        journal: "International Conference on Network Analysis"
+        journal: "International Conference on Network Analysis; Springer, Cham; pp. 257-267"
         date: 2016
       - title: "Multi-modal registration improves group discrimination in pediatric traumatic brain injury"
         authors:
@@ -1201,8 +1186,7 @@ cv:
           - "Jeffrey Johnson"
           - "Christopher C Giza"
           - "et al."
-        summary: "Springer, Cham; pp. 32-42"
-        journal: "International Workshop on Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries"
+        journal: "International Workshop on Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries; Springer, Cham; pp. 32-42"
         date: 2016
       - title: "A continuous model of cortical connectivity"
         authors:
@@ -1211,8 +1195,7 @@ cv:
           - "**Joshua Faskowitz**"
           - "Neda Jahanshad"
           - "Paul M Thompson"
-        summary: "Springer; pp. 157-165"
-        journal: "International Conference on Medical Image Computing and Computer-Assisted Intervention"
+        journal: "International Conference on Medical Image Computing and Computer-Assisted Intervention; Springer; pp. 157-165"
         date: 2016
       - title: "Population learning of structural connectivity by white matter encoding and decoding"
         authors:
@@ -1223,8 +1206,7 @@ cv:
           - "**Joshua Faskowitz**"
           - "Gautam Prasad"
           - "Paul M Thompson"
-        summary: "IEEE; pp. 554-558"
-        journal: "2016 IEEE 13th International Symposium on Biomedical Imaging (ISBI)"
+        journal: "2016 IEEE 13th International Symposium on Biomedical Imaging (ISBI); IEEE; pp. 554-558"
         date: 2016
       - title: "Genetic analysis of cortical sulci in 1,009 adults"
         authors:
@@ -1238,8 +1220,7 @@ cv:
           - "Margaret J Wright"
           - "Neda Jahanshad"
           - "Paul M Thompson"
-        summary: "IEEE; pp. 833-837"
-        journal: "2016 IEEE 13th International Symposium on Biomedical Imaging (ISBI)"
+        journal: "2016 IEEE 13th International Symposium on Biomedical Imaging (ISBI); IEEE; pp. 833-837"
         date: 2016
       - title: "Comparison of template registration methods for multi-site meta-analysis of brain morphometry"
         authors:
@@ -1249,8 +1230,7 @@ cv:
           - "Margaret J Wright"
           - "Paul M Thompson"
           - "Neda Jahanshad"
-        summary: "International Society for Optics and Photonics; Vol. 9788, pp. 978822"
-        journal: "Medical Imaging 2016: Biomedical Applications in Molecular, Structural, and Functional Imaging"
+        journal: "Medical Imaging 2016: Biomedical Applications in Molecular, Structural, and Functional Imaging; International Society for Optics and Photonics; Vol. 9788, pp. 978822"
         date: 2016
       - title: "Embedded sparse representation of fMRI data via group-wise dictionary optimization"
         authors:
@@ -1259,8 +1239,7 @@ cv:
           - "**Joshua Faskowitz**"
           - "Jieping Ye"
           - "Paul M Thompson"
-        summary: "International Society for Optics and Photonics; Vol. 9784, pp. 97841K"
-        journal: "Medical Imaging 2016: Image Processing"
+        journal: "Medical Imaging 2016: Image Processing; International Society for Optics and Photonics; Vol. 9784, pp. 97841K"
         date: 2016
       - title: "The heritability of the functional connectome is robust to common nonlinear registration methods"
         authors:
@@ -1274,8 +1253,7 @@ cv:
           - "Margaret J Wright"
           - "Meredith N Braskie"
           - "Paul M Thompson"
-        summary: "International Society for Optics and Photonics; Vol. 9784, pp. 97841R"
-        journal: "Medical Imaging 2016: Image Processing"
+        journal: "Medical Imaging 2016: Image Processing; International Society for Optics and Photonics; Vol. 9784, pp. 97841R"
         date: 2016
       - title: "Blockmodels for connectome analysis"
         authors:
@@ -1285,8 +1263,7 @@ cv:
           - "**Joshua Faskowitz**"
           - "Greg Ver Steeg"
           - "Paul Thompson"
-        summary: "International Society for Optics and Photonics; Vol. 9681, pp. 96810A"
-        journal: "11th International Symposium on Medical Information Processing and Analysis"
+        journal: "11th International Symposium on Medical Information Processing and Analysis; International Society for Optics and Photonics; Vol. 9681, pp. 96810A"
         date: 2015
       - title: "Genetic analysis of structural brain connectivity using DICCCOL models of diffusion MRI in 522 twins"
         authors:
@@ -1300,8 +1277,7 @@ cv:
           - "Nicholas G Martin"
           - "Margaret J Wright"
           - "Paul M Thompson"
-        summary: "IEEE; pp. 1167-1171"
-        journal: "2015 IEEE 12th International Symposium on Biomedical Imaging (ISBI)"
+        journal: "2015 IEEE 12th International Symposium on Biomedical Imaging (ISBI); IEEE; pp. 1167-1171"
         date: 2015
       - title: "Heritability of brain network topology in 853 twins and siblings"
         authors:
@@ -1315,8 +1291,7 @@ cv:
           - "Katie L McMahon"
           - "Margaret J Wright"
           - "Paul M Thompson"
-        summary: "IEEE; pp. 449-453"
-        journal: "2015 IEEE 12th International Symposium on Biomedical Imaging (ISBI)"
+        journal: "2015 IEEE 12th International Symposium on Biomedical Imaging (ISBI); IEEE; pp. 449-453"
         date: 2015
     Conference Posters (first-author only):
       - title: "Spatial Similarity Maps Across the Cortex"
@@ -1515,6 +1490,17 @@ design:
     single_date: YEAR
     date_range: START_DATE – END_DATE
     time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
+
+    publication_entry:
+      main_column: "**TITLE**\nSUMMARY\nAUTHORS\nJOURNAL."
+      date_and_location_column: DATE
+
+    # publication_entry:
+    #     main_column: |-
+    #       **TITLE** 
+    #       #block(inset: (left: 0.5em))AUTHORS
+    #       JOURNAL
+
   entries:
     date_and_location_width: 4.15cm
     side_space: 0.2cm
