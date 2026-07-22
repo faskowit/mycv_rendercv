@@ -5,6 +5,13 @@ small, dependency-free Python script that converts BibTeX records into its
 publication sections. It is designed to be forked: replace the CV and BibTeX
 content, then use the same generation workflow.
 
+## License and content rights
+
+The reusable converter in [`scripts/`](./scripts/) is available under the
+[MIT License](./scripts/LICENSE). The CV, bibliography, and rendered outputs
+are not covered by that license; see [CONTENT-NOTICE.md](./CONTENT-NOTICE.md)
+for their rights notice.
+
 ## Prerequisites
 
 - Python 3.10 or newer (the bibliography converter uses only the standard
@@ -104,6 +111,6 @@ scripts/bib_to_rendercv.py # BibTeX-to-RenderCV generator
 ## Before publishing a fork
 
 The example YAML includes real contact information. Replace it before making a
-public derivative if you do not intend to publish those details. This repository
-does not currently declare a license; add one before granting reuse rights to
-others.
+public derivative if you do not intend to publish those details. Forkers may
+reuse the MIT-licensed script, but must supply their own CV content and
+bibliography or obtain permission to reuse this repository's content.
