@@ -381,12 +381,6 @@ def build_journal(entry: BibEntry, section_name: str) -> str | None:
     return journal
 
 
-def build_summary(entry: BibEntry, section_name: str) -> str | None:
-    # Conference-proceedings metadata belongs on the journal line so it does
-    # not inherit the CV's visually indented summary style.
-    return None
-
-
 def build_url(entry: BibEntry) -> str | None:
     url = entry.fields.get("url")
     if url:
@@ -397,32 +391,29 @@ def build_url(entry: BibEntry) -> str | None:
     return None
 
 
-def entry_to_rendercv(
+def entry_to_reversed_numbered_entry(
     section_name: str, entry: BibEntry, owner_last_name: str
 ) -> dict[str, object]:
-    data: dict[str, object] = {
-        "title": entry.fields.get("title", entry.key),
-        "authors": split_authors(entry.fields.get("author", ""), owner_last_name),
-    }
-
+    title = entry.fields.get("title", entry.key)
+    authors = ", ".join(split_authors(entry.fields.get("author", ""), owner_last_name))
     date = build_date(entry)
     journal = build_journal(entry, section_name)
-    summary = build_summary(entry, section_name)
-    doi = entry.fields.get("doi")
     url = build_url(entry)
-
-    if summary:
-        data["summary"] = summary
-    if doi:
-        data["doi"] = doi
-    if url:
-        data["url"] = url
-    if journal:
-        data["journal"] = journal
+    metadata = f"*{journal}*" if journal else ""
     if date:
-        data["date"] = date
+        metadata = f"{metadata} ({date})" if metadata else str(date)
 
-    return data
+    title_line = f"**{title}**"
+    if url:
+        title_line += f" [link]({url})"
+
+    lines = [title_line]
+    if authors:
+        lines.append(authors)
+    if metadata:
+        lines.append(metadata)
+
+    return {"reversed_number": " #linebreak() ".join(lines)}
 
 
 def yaml_quote(text: str) -> str:
@@ -480,7 +471,7 @@ def render_section(section_name: str, entries: list[dict[str, object]]) -> list[
             else:
                 lines.append(f"        {key}: {render_scalar(value)}")
     if not entries:
-        lines.append('      - "No entries yet"')
+        lines.append('      - reversed_number: "No entries yet"')
     return lines
 
 
@@ -500,14 +491,14 @@ def render_generated_block(
         section_name = classify_publication(entry)
         if section_name:
             section_map[section_name].append(
-                entry_to_rendercv(section_name, entry, owner_last_name)
+                entry_to_reversed_numbered_entry(section_name, entry, owner_last_name)
             )
 
     for entry in sort_entries(poster_entries):
         if has_keyword(entry, POSTER_INCLUDE_KEYWORD):
             section_name = "Conference Posters (first-author only)"
             section_map[section_name].append(
-                entry_to_rendercv(section_name, entry, owner_last_name)
+                entry_to_reversed_numbered_entry(section_name, entry, owner_last_name)
             )
 
     lines = [

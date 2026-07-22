@@ -67,6 +67,8 @@ edited directly in the YAML file.
 Entries are sorted newest first. A DOI is used as a URL when no `url` field is
 provided. For conference proceedings, publisher, volume, and page information
 are appended to the journal line rather than rendered as an indented summary.
+All generated publication sections use reverse-numbered entries; each entry
+shows its title, authors, venue, and publication date.
 
 ## Adapt this repository for your own CV
 
