@@ -2,7 +2,7 @@
 
 cv:
   name: "Joshua Faskowitz"
-  headline: "Postdoctoral Fellow, Section on Functional Imaging Methods"
+  headline: "Postdoctoral Fellow | Network Neuroscience & Functional MRI"
   location: "Bethesda, MD"
   email: "faskowitzji@nih.gov"
   website: "https://faskowit.github.io/"
@@ -11,7 +11,7 @@ cv:
       username: "faskowit"
   sections:
     Research Profile:
-      - "I study how large-scale brain organization emerges from interactions among brain areas, with an emphasis on edge-centric models, mesoscale structure, and the interpretation of functional MRI signals. My work combines network science, computational modeling, and neuroimaging analysis to develop methods for understanding brain structure, function, and dynamics."
+      - "I study how large-scale brain organization emerges from interactions among brain areas, with an emphasis on edge-centric models, mesoscale structure, and the interpretation of functional MRI signals. My work blends network science, computational modeling, and neuroimaging analysis to further our understanding of brain functioning."
 
     Education:
       - institution: "Indiana University Bloomington"
@@ -19,9 +19,10 @@ cv:
         degree: "Ph.D."
         end_date: "2021"
         location: "Bloomington, IN"
-        highlights:
-          - "Advisor: Dr. Olaf Sporns"
-          - "Committee: Dr. Olaf Sporns, Dr. Aina Puce, Dr. Amanda Mejia, Dr. Richard Betzel"
+        summary: "Advisor: Dr. Olaf Sporns\nCommittee: Dr. Olaf Sporns, Dr. Aina Puce, Dr. Amanda Mejia, Dr. Richard Betzel"
+        # highlights:
+          #- "Advisor: Dr. Olaf Sporns"
+          #- "Committee: Dr. Olaf Sporns, Dr. Aina Puce, Dr. Amanda Mejia, Dr. Richard Betzel"
       - institution: "University of Southern California"
         area: "Neuroscience, Cognitive Science"
         degree: "B.A."
@@ -29,48 +30,46 @@ cv:
         location: "Los Angeles, CA"
 
     Research Experience:
-      - company: "National Institute of Mental Health"
-        position: "Postdoctoral Fellow, Section on Functional Imaging Methods"
+      - company: "Section on Functional Imaging Methods, National Institute of Mental Health"
+        position: "Postdoctoral Fellow"
         start_date: "2022"
         end_date: present
         location: "Bethesda, MD"
         summary: "PI: Dr. Peter A. Bandettini"
-        highlights:
-          - "Develop and apply methods for characterizing fMRI correlation structure across space and time"
-          - "Study how preprocessing, physiology, and signal interpretation shape inferences about brain organization"
+        # highlights:
+        #   - "Develop and apply methods for characterizing fMRI correlation structure across space and time"
       - company: "Indiana University Department of Psychological and Brain Sciences"
         position: "Postdoctoral Researcher"
         start_date: "2021"
         end_date: "2022"
         location: "Bloomington, IN"
         summary: "PI: Dr. Olaf Sporns and Dr. Richard Betzel"
-        highlights:
-          - "Extended edge-centric and community-based network models for studies of human brain organization"
-          - "Supported collaborative neuroimaging and network science projects through analysis, mentoring, and shared computational workflows"
+        # highlights:
+        #   - "Extended edge-centric and community-based network models for studies of human brain organization"
       - company: "IU Computational Cognitive Neuroscience Lab"
         position: "Graduate Student"
         start_date: "2016"
         end_date: "2021"
         location: "Bloomington, IN"
         summary: "PI: Dr. Olaf Sporns"
-        highlights:
-          - "Investigated mesoscale organization, edge-centric representations, and time-varying structure in structural and functional brain networks"
+        # highlights:
+        #   - "Gained expertise in network neuroscience, neuroimaging analysis, and computational modeling"
       - company: "USC Imaging Genetics Center"
         position: "Project Assistant"
         start_date: "2014"
         end_date: "2016"
         location: "Los Angeles, CA"
         summary: "PI: Dr. Paul Thompson; under supervision of Dr. Neda Jahanshad"
-        highlights:
-          - "Processed MRI into analysis-ready neuroimages by designing workflows"
+        # highlights:
+        #   - "Processed MRI into analysis-ready neuroimages by designing workflows"
       - company: "USC Emotion & Cognition Lab"
         position: "Undergraduate Research Assistant"
         start_date: "2012"
         end_date: "2014"
         location: "Los Angeles, CA"
         summary: "PI: Dr. Mara Mather; under supervision of Dr. Allison Ponzio"
-        highlights:
-          - "Administered experiments; over 800 lab hours across 5 semesters and 1 summer"
+        # highlights:
+        #   - "Administered experiments; over 800 lab hours across 5 semesters and 1 summer"
 
     Research Keywords:
       - "Network neuroscience; network science algorithms and applications; community detection; edge-centric modeling; fMRI analysis and interpretation; time-varying connectivity"
@@ -111,6 +110,9 @@ cv:
         summary: "For excelling in two widely separated fields of study and for conducting scholarly research; one of 64 graduates with multiple scholar honors at graduation"
 
     Invited Talks:
+      - name: "Brain connectivity and advanced analysis strategies"
+        date: "2024, 2026"
+        summary: "fMRI Summer Course talk series at NIH"
       - name: "Spatial Similarity Maps Across the Cortex"
         date: "2026"
         summary: "OHBM 2026 oral session"
@@ -125,7 +127,7 @@ cv:
         summary: "Dr. Lucina Uddin lab meeting"
       - name: "fMRI Preprocessing Workshop"
         date: "2022"
-        summary: "Three-day workshop covering workflows for processing functional neuroimaging data on Indiana University high-performance computing resources"
+        summary: "Three days covering workflows for processing neuroimaging data using high-performance computing"
       - name: "Publicly Available Neuroimaging Databases"
         date: "2020"
         summary: "CUNY 2020 workshop on remote data collection"
@@ -141,7 +143,7 @@ cv:
         date: "2018"
         summary: "Instructor of record"
 
-    Workshops and Hackathons Attended:
+    Workshops & Hackathons Attended:
       - name: "NIMH Grant Writing Workshop"
         date: "2024, 2025"
         summary: "Full-day overview of grantsmanship"
@@ -161,17 +163,17 @@ cv:
         date: "2015"
         summary: "Pre-OHBM 2015, Honolulu, U.S.A."
 
-    Code and Data Sharing Examples:
-      - name: "Multi Atlas Transfer Tools"
+    Code & Data Sharing Examples:
+      - name: "[Multi Atlas Transfer Tools](https://github.com/faskowit/multiAtlasTT)"
         summary: "Fit surface parcellations; run more than 20,000 times as an app on Brainlife.io"
-      - name: "fMRI-2-MatTools"
+      - name: "[fMRI-2-mat](https://github.com/faskowit/app-fmri-2-mat)"
         summary: "Denoising and matrix-based downstream analysis of fMRI data"
-      - name: "Lifespan structural connectivity matrices from Faskowitz (2018)"
-        summary: "Shared dataset"
-      - name: "Brain-networks-across-the-web"
+      - name: "[Lifespan structural connectivity matrices from Faskowitz (2018)](https://figshare.com/articles/dataset/Faskowitz2018wsbmLifeSpan_data/6983018)"
+        summary: "Shared dataset downloaded >200 times."
+      - name: "[Brain-networks-across-the-web](https://github.com/faskowit/brain-networks-across-the-web)"
         summary: "Compilation of openly available brain networks"
 
-    Research Skills:
+    Research Toolbox:
       - label: "Coding and Scripting"
         details: "MATLAB (expert), shell scripting (bash, awk, grep, sed) (expert), Python (competent), R (competent), LaTeX (basic)"
       - label: "Computational Tools"
@@ -180,10 +182,11 @@ cv:
         details: "FSL, FreeSurfer, ANTs, Dipy, fMRIPrep, MRtrix, AFNI"
 
     Journal Peer Review:
-      - "Aperture Neuro; Brain Imaging and Behavior; Brain Structure and Function; Biological Psychiatry; Cerebral Cortex; Communications Biology; Human Brain Mapping; Nature Communications; Network Science; Network Neuroscience; NeuroImage; Scientific Data; Scientific Reports; The Journal of Neuroscience; Trends in Cognitive Sciences"
+      - "*Please see Web of Science  profile [(K-1330-2019)](https://www.webofscience.com/wos/author/record/K-1330-2019) for list of reviewer activity, including:*"
+      - "Aperture Neuro; Brain Imaging and Behavior; Brain Structure and Function; Biological Psychiatry; Cerebral Cortex; Human Brain Mapping; Nature Communications; Nature Neuroscience; Network Neuroscience; NeuroImage; Scientific Data; Scientific Reports; The Journal of Neuroscience; Trends in Cognitive Sciences"
 
     Professional Affiliations:
-      - "Organization for Human Brain Mapping; Society for Neuroscience; Network Science Society;"
+      - "Organization for Human Brain Mapping; Society for Neuroscience; Network Science Society"
 
     # BEGIN GENERATED BIBLIOGRAPHY
     # Generated by scripts/bib_to_rendercv.py. Edit the .bib files, then rerun the script.
@@ -318,8 +321,8 @@ design:
   theme: "sb2nov"
 
   templates:
-    footer: "*NAME -- PAGE_NUMBER/TOTAL_PAGES*"
-    top_note: "*LAST_UPDATED CURRENT_DATE*"
+    footer: "#align(right)[NAME, PAGE_NUMBER/TOTAL_PAGES]"
+    top_note: "*LAST_UPDATED MONTH_NAME YEAR*"    
     single_date: YEAR
     date_range: START_DATE – END_DATE
     time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
@@ -350,6 +353,9 @@ design:
     space_between_text_based_entries: 0.2em
     show_time_spans_in: 
       - experience
+  links:
+    underline: false
+    show_external_link_icon: false
 
 locale:
   language: "english"
