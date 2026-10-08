@@ -1,3 +1,4 @@
 rendercv_output/*
 .DS_Store
 skills*
+*pyc
